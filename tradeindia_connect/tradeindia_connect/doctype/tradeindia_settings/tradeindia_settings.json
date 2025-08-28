@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-27 14:02:06.550363",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "profile_id",
+  "key",
+  "column_break_zmse",
+  "column_break_wqkz",
+  "from_date",
+  "to_date",
+  "section_break_kyle",
+  "default_lead_source",
+  "default_lead_owner",
+  "column_break_ozca",
+  "column_break_jbcl",
+  "section_break_rwdm",
+  "lead_doctype",
+  "table_xjfs"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "profile_id",
+   "fieldtype": "Data",
+   "label": "Profile ID"
+  },
+  {
+   "fieldname": "key",
+   "fieldtype": "Password",
+   "label": "Key"
+  },
+  {
+   "description": "Note : Target fields are from CRM Lead Doctype or Lead (as per Lead Doctype Selected), You can set the Target Field according to your requirement",
+   "fieldname": "table_xjfs",
+   "fieldtype": "Table",
+   "options": "TradeIndia Field Mapping"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Date (From)"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Date (To)"
+  },
+  {
+   "fieldname": "default_lead_owner",
+   "fieldtype": "Link",
+   "label": "Default Lead Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "default_lead_source",
+   "fieldtype": "Link",
+   "label": "Default Lead Source",
+   "options": "CRM Lead Source"
+  },
+  {
+   "fieldname": "column_break_wqkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zmse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kyle",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "column_break_ozca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jbcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rwdm",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "lead_doctype",
+   "fieldtype": "Select",
+   "label": "Lead Doctype",
+   "options": "\nLead\nCRM Lead"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-08-28 10:57:38.450391",
+ "modified_by": "Administrator",
+ "module": "tradeindia Connect",
+ "name": "TradeIndia Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

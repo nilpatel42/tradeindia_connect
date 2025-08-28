@@ -21,6 +21,15 @@ app_license = "mit"
 # 	}
 # ]
 
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["name", "in", ["CRM Lead-custom_tradeindia_sender_uid"]]
+        ]
+    }
+]
+
 # Includes in <head>
 # ------------------
 
