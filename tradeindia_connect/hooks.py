@@ -21,15 +21,6 @@ app_license = "mit"
 # 	}
 # ]
 
-fixtures = [
-    {
-        "doctype": "Custom Field",
-        "filters": [
-            ["name", "in", ["CRM Lead-custom_tradeindia_sender_uid"]]
-        ]
-    }
-]
-
 # Includes in <head>
 # ------------------
 
@@ -156,6 +147,14 @@ fixtures = [
 
 # Scheduled Tasks
 # ---------------
+
+scheduler_events = {
+    "cron": {
+        "0 */2 * * *": [
+            "tradeindia_connect.api.fetch_tradeindia_inquiries_scheduled"
+        ]
+    }
+}
 
 # scheduler_events = {
 # 	"all": [
