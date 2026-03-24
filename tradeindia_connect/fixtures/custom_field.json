@@ -34,7 +34,7 @@
   "link_filters": null,
   "mandatory_depends_on": null,
   "modified": "2025-08-27 18:03:15.243018",
-  "module": "tradeindia Connect",
+  "module": "TradeIndia Connect",
   "name": "CRM Lead-custom_tradeindia_sender_uid",
   "no_copy": 0,
   "non_negative": 0,

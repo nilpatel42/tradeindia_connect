@@ -1,0 +1,23 @@
+{
+ "app": "tradeindia_connect",
+ "bg_color": "blue",
+ "creation": "2026-03-24 16:16:32.222551",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "Link",
+ "idx": 0,
+ "label": "TradeIndia Connect",
+ "link_to": "TradeIndia Connect",
+ "link_type": "Workspace Sidebar",
+ "logo_url": "/assets/tradeindia_connect/tradeindia-connect-1.png",
+ "modified": "2026-03-24 16:28:47.619432",
+ "modified_by": "Administrator",
+ "name": "TradeIndia Connect",
+ "owner": "Administrator",
+ "parent_icon": "",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "TradeIndia Connect",
+ "standard": 1
+}

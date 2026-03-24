@@ -15,12 +15,24 @@ frappe.ui.form.on("TradeIndia Settings", {
                 method: "tradeindia_connect.api.fetch_tradeindia_inquiries",
                 freeze: true,
                 freeze_message: "Fetching Inquiries...",
-                callback: function(r) {
-                    if (!r.exc) {
-                        frappe.msgprint("Inquiries fetched and Leads created successfully!");
-                    }
-                }
             });
-        });
+        }, ("Get Data"));
+
+        frm.add_custom_button("Fetch BuyLeads", function() {
+            frappe.call({
+                method: "tradeindia_connect.api.fetch_tradeindia_buyleads",
+                freeze: true,
+                freeze_message: "Fetching BuyLeads...",
+            });
+        }, ("Get Data"));
+
+        frm.add_custom_button("Fetch Responded BuyLeads", function() {
+            frappe.call({
+                method: "tradeindia_connect.api.fetch_tradeindia_buyleads",
+                args: { responded: 1 },
+                freeze: true,
+                freeze_message: "Fetching Responded BuyLeads...",
+            });
+        }, ("Get Data"));
     }
 });

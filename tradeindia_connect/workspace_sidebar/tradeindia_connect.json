@@ -1,0 +1,28 @@
+{
+ "app": "tradeindia_connect",
+ "creation": "2026-03-24 16:28:21.800598",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "settings",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "TradeIndia Settings",
+   "link_to": "TradeIndia Settings",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-24 16:28:21.800598",
+ "modified_by": "Administrator",
+ "module": "tradeindia Connect",
+ "name": "TradeIndia Connect",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "TradeIndia Connect"
+}

@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "tradeindia_connect",
-# 		"logo": "/assets/tradeindia_connect/logo.png",
-# 		"title": "tradeindia Connect",
-# 		"route": "/tradeindia_connect",
-# 		"has_permission": "tradeindia_connect.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "tradeindia_connect",
+		"logo": "/assets/tradeindia_connect/tradeindia-connect-1.png",
+		"title": "TradeIndia Connect",
+		"route": "/desk/tradeindia-settings/TradeIndia Settings",
+		"has_permission": "erpnext.check_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -150,8 +150,9 @@ app_license = "mit"
 
 scheduler_events = {
     "cron": {
-        "0 */2 * * *": [
-            "tradeindia_connect.api.fetch_tradeindia_inquiries_scheduled"
+        "0 */1 * * *": [
+            "tradeindia_connect.api.fetch_tradeindia_inquiries_scheduled",
+            "tradeindia_connect.api.fetch_tradeindia_buyleads_scheduled"
         ]
     }
 }
